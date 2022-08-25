@@ -1,6 +1,6 @@
 local display = false
 
-RegisterCommand("nui", function(source, args)
+RegisterCommand("fps", function(source, args)
     SetDisplay(not display)
 end)
 
