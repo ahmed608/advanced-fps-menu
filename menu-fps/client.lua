@@ -1,14 +1,10 @@
 local display = false
-
 RegisterCommand("fps", function(source, args)
     SetDisplay(not display)
 end)
-
---very important cb 
 RegisterNUICallback("close", function(data)
     SetDisplay(false)
 end)
-
 RegisterNUICallback("button1", function()
     SetTimecycleModifier('MP_Powerplay_blend')
     SetExtraTimecycleModifier('reflection_correct_ambient')
